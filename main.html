@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mainStyle.css">
+    <script src="mainJs.js"></script>
+    <title>Home</title>
+</head>
+<body dir="rtl">
+    <header>
+        <nav>
+            <ul id="nav">
+                <li>
+                    <a href="#">صفحه اصلی</a>
+                </li>
+                <li>
+                    <a href="interest/interest.html">علاقه مندی‌های من</a>
+                </li>
+                <li>
+                    <a href="socialMedia/socialMedia.html">شبکه‌های اجتماعی</a>
+                </li>
+                <li>
+                    <a href="form/form.html">فرم همکاری</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main dir="rtl">
+        <section>
+            <div id="wrapper">
+                <div class="one"><img id="imgOne" src="photos/AvatarMaker.jpg" onclick="showPhoto()"></div>
+                <div class="two">
+                    <h2>سلام. من نگار رئیسی هستم.</h2>
+                    <h3>من دانشجوی مهندسی کامپیوتر هستم.</h3>
+                    <h3>تخصص اصلی من برنامه نویسی <span dir="ltr" style="font-size:50px">Front-End</span> است.</h3>
+                    <h4>علایق من مربوط به برنامه نویسی، موسیقی و زبان انگلیسی است.</h4>
+                </div>
+              </div>
+        </section>
+        <div id="hidden" style="display: none;">
+            <div>
+                <img id="hiddenImg" src="photos/hidden.jpg">
+            </div>
+        </div>
+        <article id="cv">
+            <h3 id="cvH3">
+                رزومه من
+            </h3>
+            <button id="cvDl" onclick="changeBg()">
+                دانلود رزومه من
+            </button>
+        </article>
+        <h5>پروژه‌های من</h5>
+        <article id="project">
+            <div class="item">
+                <img class="imgPro" src="photos/dm6.png" alt="pic1" width="100px" height="100px">
+                <p>
+                    پروژه وبسایت موسیقی
+                    <br/>
+                    <br/>
+                    با استفاده از html, css, js
+                </p>
+            </div>
+            <div class="item"> 
+                <img class="imgPro" src="photos/nemonekarajadid3.png" alt="pic2" width="100px" height="100px">
+                <p>
+                    پروژه وبسایت گلرن
+                    <br/>
+                    <br/>
+                    با استفاده از html, css, js, bootstrap, jquery
+                </p>
+            </div>
+            <div class="item">
+                <img class="imgPro" src="photos/pf_1-740x740-1.jpg" alt="pic3" width="100px" height="100px">
+                <p>
+                    پروژه کافی نت
+                    <br/>
+                    <br/>
+                    با زبان جاوا
+                </p>
+            </div>
+            <div class="item">
+                <img class="imgPro" src="photos/kajijlkl-22-400x400-1.png" alt="pic4" width="100px" height="100px">
+                <p>
+                    پروژه کافی نت
+                    <br/>
+                    <br/>
+                    با زبان سی
+                </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>
+            نگار رئیسی
+            شماره دانشجویی: 9821160016
+        </p>
+    </footer>
+</body>
+</html>

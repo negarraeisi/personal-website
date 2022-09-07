@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formStyle.css">
+    <script src="formJs.js"></script>
+    <title>Form</title>
+</head>
+<body dir="rtl">
+    <header>
+        <nav>
+            <ul id="nav">
+                <li>
+                    <a href="../main.html">صفحه اصلی</a>
+                </li>
+                <li>
+                    <a href="../interest/interest.html">علاقه مندی‌های من</a>
+                </li>
+                <li>
+                    <a href="../socialMedia/socialMedia.html">شبکه‌های اجتماعی</a>
+                </li>
+                <li>
+                    <a href="#">فرم همکاری</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="h21" style="text-align: center;">فرم زیر را برای درخواست همکاری پر کنید.</h2>
+        <form id="form">
+            <p>من درخواست همکاری به عنوان یک ...... را دارم</p>
+            <input type="radio" id="menti" name="mentype" value="کارفرما">
+            <label for="menti">کارفرما</label><br>
+            <input type="radio" id="mentor" name="mentype" value="همکار">
+            <label for="mentor">همکار</label><br>
+            <br/>
+            <label for="lname">نام و نام خانوادگی</label><br>
+            <input type="text" id="lname" name="lname" style="width:40%;">
+            <p>جنسیت</p>
+            <input type="radio" id="male" name="gender" value="آقا">
+            <label for="male">آقا</label><br>
+            <input type="radio" id="female" name="gender" value="خانم">
+            <label for="female">خانم</label><br>
+            <br/>
+            <label for="age">سن</label><br>
+            <input type="text" id="age" name="age" style="width:40%;">
+            <br>
+            <br/>
+            <label for="natcode">کد ملی</label><br>
+            <input type="text" id="natcode" name="natcode" style="width:40%;">
+            <br/>
+            <br/>
+            <label  for="phone">تلفن همراه</label><br>
+            <input type="text" id="phone" name="phone" style="width:40%;">
+            <br/>
+            <br/>
+            <label for="email">ایمیل</label><br>
+            <input type="text" id="email" name="email" style="width:40%;">
+            <br/>
+            <br/>
+            <input class="btnSub" type="button" value="تایید" onclick="sub()">
+        </form>
+        <section id="results" style="display: none;">
+            <h2 class="h21" >فرم وارد شده شما به این صورت است:</h2>
+            <p>درخواست همکاری به عنوان:</p>
+            <p><span id="as"></span></p>
+            <br/>
+            <p>نام و نام خانوادگی:</p>
+            <p><span id="name"></span></p>
+            <br/>
+            <p>جنسیت:</p>
+            <p><span id="gen"></span></p>
+            <br/>
+            <p>سن</p>
+            <p><span id="ag2"></span></p>
+            <br/>
+            <p>کد ملی:</p>
+            <p><span id="nc"></span></p>
+            <br/>
+            <p>تلفن همراه:</p>
+            <p><span id="phn"></span></p>
+            <br/>
+            <p>ایمیل:</p>
+            <p><span id="ema"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            نگار رئیسی
+            شماره دانشجویی: 9821160016
+        </p>
+    </footer>
+</body>
+</html>
